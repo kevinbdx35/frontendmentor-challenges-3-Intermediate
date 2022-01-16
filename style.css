@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html{
+      font-family: 'Rubik', sans-serif;
+  }
+
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: 
+    'fond fond fond fond fond'
+    'carte carte carte carte carte'
+    'carte carte carte carte carte';
+    }
+    
+    .grid1 { 
+        grid-area: fond; 
+        background-image: url(images/pattern-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+       
+    }
+
+.center{
+    position:relative;
+    top:45%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+    h1{
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+
+    form{
+        
+        width: 100%;
+        position:relative;
+        text-align: center;
+        
+        
+    }
+
+    input{
+        height: 55px;
+        width: 500px;
+        border: none;
+        border-radius: 15px 0 0 15px;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 50px;
+        cursor: pointer;
+
+    }
+
+    button{
+        background-color: #000;
+        color: #fff;
+        font-size: 30px;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        height: 55px;
+        width: 55px;
+        margin-left: -4px;
+        vertical-align: bottom;
+        margin-bottom: 50px;
+        cursor: pointer;
+    }
+    
+
+
+
+
+    .grid2 { grid-area: carte; }
+
+    #map { height: 70vh; }
+
+    .container-parent{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background-color: #fff;
+        height: 200px;
+        width:1000px;
+        border: none;
+        border-radius: 20px;
+        position: absolute;
+        top:35%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .container-1, .container-2, .container-3, .container-4{
+        width: 18ch;
+        height: auto;
+    }
+
+
+small{
+    display: block;
+    color: rgb(194, 194, 194);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+h2{
+    color:rgb(55, 55, 55);
+    margin-top: 20px;
+    font-weight: 500;
+}

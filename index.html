@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+ <script src="main.js" defer></script>
+ <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+
+  <div class="grid-parent">
+    <div class="grid1"> 
+      <div class="center">
+        <h1>IP Address Tracker</h1>
+        <form id="form">
+          <input type="text" placeholder="Search for any IP address or domain" id="search" class="search" required>
+          <button type="submit"><i class='bx bxs-chevron-right bx-tada bx-rotate-90' ></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="grid2"> 
+      <div id="map"></div>
+    </div>
+  
+
+
+<div class="container-parent">
+  <div class="container-1">
+    <small>IP Address</small>
+    <h2>192.212.174.101</h2>
+  </div>
+  <div class="container-2">
+    <small>Location</small>
+    <h2>Brooklin, NY 10001</h2>
+  </div>
+  <div class="container-3">
+    <small>Timezone</small>
+    <h2>UTC - 05:00</h2>
+  </div>
+  <div class="container-4">
+    <small>ISP</small>
+    <h2>SpaceX Starlink</h2>
+  </div>
+</div>
+</div>
+
+ 
+  
+</body>
+</html>
